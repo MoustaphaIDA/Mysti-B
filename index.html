@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Découvrez la collection de parfums raffinés de Mysti B, des fragrances uniques pour tous les goûts." />
+    <meta name="keywords" content="parfums, fragrances, Mysti B, Kayali, Guerlain, Chanel" />
+    <title>Mysti B. – Nos Parfums</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo-mysti.jpg" alt="Logo de Mysti B, parfumerie élégante" class="logo-img" loading="lazy">
+      </div>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="#accueil" aria-current="page">Accueil</a></li>
+          <li><a href="#parfums">Nos Parfums</a></li>
+          <li><a href="#about">À Propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="accueil" class="welcome">
+      <h1>Bienvenue dans notre univers parfumé 🌸</h1>
+      <p>Éveillez vos sens avec notre collection raffinée.</p>
+    </section>
+
+    <section id="parfums" class="products">
+      <h2>Nos Parfums</h2>
+      <div class="grid">
+        <div class="item">
+          <img src="images/vanilla.jpg" alt="Flacon de parfum Kayali Vanilla 28" class="product-img" loading="lazy" />
+          <h3>Kayali Vanilla | 28</h3>
+          <p>Notes gourmandes de vanille et de sucre brun, une douceur captivante.</p>
+          <button onclick="openModal('kayali')" aria-label="Voir les détails de Kayali Vanilla 28">Voir le produit</button>
+        </div>
+        <div class="item">
+          <img src="images/burning-cherry.jpg" alt="Flacon de parfum LOVEFEST Burning Cherry 48" class="product-img cherry-bg" loading="lazy" />
+          <h3>LOVEFEST Burning Cherry | 48</h3>
+          <p>Explosion fruitée de cerise brûlante et framboise, avec une touche d’amande.</p>
+          <button onclick="openModal('lovefest')" aria-label="Voir les détails de LOVEFEST Burning Cherry 48">Voir le produit</button>
+        </div>
+        <div class="item">
+          <img src="images/eden.jpg" alt="Flacon de parfum EDEN Juicy Apple 01" class="product-img apple-bg" loading="lazy" />
+          <h3>EDEN Juicy Apple | 01</h3>
+          <p>Pomme juteuse et notes sucrées, pour une fraîcheur éclatante.</p>
+          <button onclick="openModal('eden')" aria-label="Voir les détails de EDEN Juicy Apple 01">Voir le produit</button>
+        </div>
+        <div class="item">
+          <img src="images/givenchy.jpg" alt="Flacon de parfum Givenchy Pi Eau de Toilette" class="product-img pi-style" loading="lazy" />
+          <h3>Givenchy Pi</h3>
+          <p>Masculinité et sensualité. Une fragrance boisée orientale intemporelle.</p>
+          <button onclick="openModal('pi')" aria-label="Voir les détails de Givenchy Pi">Voir le produit</button>
+        </div>
+        <div class="item">
+          <img src="images/good-girl.jpg" alt="Flacon de parfum Good Girl Blush Elixir" class="product-img goodgirl-style" loading="lazy" />
+          <h3>Good Girl Blush Elixir</h3>
+          <p>Un parfum floral intense dans un flacon haute-couture signé CH.</p>
+          <button onclick="openModal('goodgirl')" aria-label="Voir les détails de Good Girl Blush Elixir">Voir le produit</button>
+        </div>
+        <div class="item">
+          <img src="images/guerlain.jpg" alt="Flacon de parfum Mon Guerlain Eau de Parfum" class="product-img monguerlain-style" loading="lazy" />
+          <h3>Mon Guerlain</h3>
+          <p>Lavande, vanille et bois enveloppants pour une féminité moderne.</p>
+          <button onclick="openModal('monguerlain')" aria-label="Voir les détails de Mon Guerlain">Voir le produit</button>
+        </div>
+        <div class="item">
+          <img src="images/la-petite-robe-noire.jpg" alt="Flacon de parfum La Petite Robe Noire Guerlain" class="product-img robe-noire-style" loading="lazy" />
+          <h3>La Petite Robe Noire</h3>
+          <p>Cerise noire, rose et thé noir dans une essence parisienne iconique.</p>
+          <button onclick="openModal('robe-noire')" aria-label="Voir les détails de La Petite Robe Noire">Voir le produit</button>
+        </div>
+        <div class="item">
+          <img src="images/l'interdit.jpg" alt="Flacon de parfum L'Interdit Eau de Parfum Rouge" class="product-img interdit-style" loading="lazy" />
+          <h3>L'Interdit Eau de Parfum Rouge</h3>
+          <p>Fleur blanche et piment rouge pour une signature provocante.</p>
+          <button onclick="openModal('interdit')" aria-label="Voir les détails de L'Interdit Eau de Parfum Rouge">Voir le produit</button>
+        </div>
+        <div class="item">
+          <img src="images/l'interdit1.jpg" alt="Flacon de parfum L'Interdit Eau de Parfum" class="product-img interdit-rose-style" loading="lazy" />
+          <h3>L'Interdit Eau de Parfum</h3>
+          <p>Un floral contrasté mêlant délicatesse et audace dans un flacon élégant.</p>
+          <button onclick="openModal('interdit-rose')" aria-label="Voir les détails de L'Interdit Eau de Parfum">Voir le produit</button>
+        </div>
+        <div class="item">
+          <img src="images/scandal.jpg" alt="Flacon de parfum SO SCANDAL! Le Parfum" class="product-img scandal-style" loading="lazy" />
+          <h3>SO SCANDAL! Le Parfum</h3>
+          <p>Explosion florale et sensuelle dans un écrin rouge passion.</p>
+          <button onclick="openModal('scandal')" aria-label="Voir les détails de SO SCANDAL! Le Parfum">Voir le produit</button>
+        </div>
+        <div class="item">
+          <img src="images/dior-homme.jpg" alt="Flacon de parfum Chanel Allure Homme Sport" class="product-img allure-style" loading="lazy" />
+          <h3>Allure Homme Sport</h3>
+          <p>La fraîcheur énergique de Chanel entre sensualité et vitalité.</p>
+          <button onclick="openModal('allure')" aria-label="Voir les détails de Chanel Allure Homme Sport">Voir le produit</button>
+        </div>
+        <div class="item">
+          <img src="images/yum.jpg" alt="Flacon de parfum Yum Pistachio Gelato 33" class="product-img pistachio-style" loading="lazy" />
+          <h3>Yum Pistachio Gelato | 33</h3>
+          <p>Glace à la pistache, sucre filé… une gourmandise olfactive irrésistible.</p>
+          <button onclick="openModal('pistachio')" aria-label="Voir les détails de Yum Pistachio Gelato 33">Voir le produit</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>À Propos de Mysti B</h2>
+      <p>Chez Mysti B, nous créons des parfums qui capturent l'essence de l'élégance et de l'émotion. Notre mission est d'éveiller vos sens avec des fragrances uniques.</p>
+      <ul>
+        <li>Qualité artisanale</li>
+        <li>Ingrédients soigneusement sélectionnés</li>
+        <li>Engagement pour l'innovation</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contactez-nous</h2>
+      <form action="/submit" method="POST" aria-label="Formulaire de contact">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required aria-required="true" />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required aria-required="true" />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required aria-required="true"></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <div id="modal-kayali" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-kayali-title">
+      <div class="modal-content">
+        <img src="images/scandal.jpg" alt="Flacon de parfum Kayali Vanilla 28" loading="lazy">
+        <h2 id="modal-kayali-title">Kayali Vanilla | 28</h2>
+        <p>Vanille chaude et éclats crémeux.</p>
+        <p class="price">Prix : 59,00 €</p>
+        <button class="buy" aria-label="Commander Kayali Vanilla 28">Commander</button>
+        <button class="close" onclick="closeModal('kayali')" aria-label="Fermer la fenêtre modale">Fermer</button>
+      </div>
+    </div>
+
+    <div id="modal-lovefest" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-lovefest-title">
+      <div class="modal-content">
+        <img src="images/burning-cherry.jpg" alt="Flacon de parfum LOVEFEST Burning Cherry 48" loading="lazy">
+        <h2 id="modal-lovefest-title">LOVEFEST Burning Cherry | 48</h2>
+        <p>Cerise brûlante et framboise éclatante.</p>
+        <p class="price">Prix : 65,00 €</p>
+        <button class="buy" aria-label="Commander LOVEFEST Burning Cherry 48">Commander</button>
+        <button class="close" onclick="closeModal('lovefest')" aria-label="Fermer la fenêtre modale">Fermer</button>
+      </div>
+    </div>
+
+    <div id="modal-eden" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-eden-title">
+      <div class="modal-content">
+        <img src="images/eden.jpg" alt="Flacon de parfum EDEN Juicy Apple 01" loading="lazy">
+        <h2 id="modal-eden-title">EDEN Juicy Apple | 01</h2>
+        <p>Pomme juteuse et éclats fruités.</p>
+        <p class="price">Prix : 52,00 €</p>
+        <button class="buy" aria-label="Commander EDEN Juicy Apple 01">Commander</button>
+        <button class="close" onclick="closeModal('eden')" aria-label="Fermer la fenêtre modale">Fermer</button>
+      </div>
+    </div>
+
+    <div id="modal-pi" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-pi-title">
+      <div class="modal-content">
+        <img src="images/givenchy.jpg" alt="Flacon de parfum Givenchy Pi" loading="lazy">
+        <h2 id="modal-pi-title">Givenchy Pi</h2>
+        <p>Boisé oriental, masculin et enveloppant.</p>
+        <p class="price">Prix : 68,00 €</p>
+        <button class="buy" aria-label="Commander Givenchy Pi">Commander</button>
+        <button class="close" onclick="closeModal('pi')" aria-label="Fermer la fenêtre modale">Fermer</button>
+      </div>
+    </div>
+
+    <div id="modal-goodgirl" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-goodgirl-title">
+      <div class="modal-content">
+        <img src="images/good-girl.jpg" alt="Flacon de parfum Good Girl Blush Elixir" loading="lazy">
+        <h2 id="modal-goodgirl-title">Good Girl Blush Elixir</h2>
+        <p>Floral intense et ultra féminin.</p>
+        <p class="price">Prix : 72,00 €</p>
+        <button class="buy" aria-label="Commander Good Girl Blush Elixir">Commander</button>
+        <button class="close" onclick="closeModal('goodgirl')" aria-label="Fermer la fenêtre modale">Fermer</button>
+      </div>
+    </div>
+
+    <div id="modal-monguerlain" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-monguerlain-title">
+      <div class="modal-content">
+        <img src="images/guerlain.jpg" alt="Flacon de parfum Mon Guerlain" loading="lazy">
+        <h2 id="modal-monguerlain-title">Mon Guerlain</h2>
+        <p>Lavande, vanille et bois doux.</p>
+        <p class="price">Prix : 64,00 €</p>
+        <button class="buy" aria-label="Commander Mon Guerlain">Commander</button>
+        <button class="close" onclick="closeModal('monguerlain')" aria-label="Fermer la fenêtre modale">Fermer</button>
+      </div>
+    </div>
+
+    <div id="modal-robe-noire" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-robe-noire-title">
+      <div class="modal-content">
+        <img src="images/la-petite-robe-noire.jpg" alt="Flacon de parfum La Petite Robe Noire" loading="lazy">
+        <h2 id="modal-robe-noire-title">La Petite Robe Noire</h2>
+        <p>Cerise noire et rose parisienne.</p>
+        <p class="price">Prix : 58,00 €</p>
+        <button class="buy" aria-label="Commander La Petite Robe Noire">Commander</button>
+        <button class="close" onclick="closeModal('robe-noire')" aria-label="Fermer la fenêtre modale">Fermer</button>
+      </div>
+    </div>
+
+    <div id="modal-interdit" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-interdit-title">
+      <div class="modal-content">
+        <img src="images/l'interdit.jpg" alt="Flacon de parfum L'Interdit Eau de Parfum Rouge" loading="lazy">
+        <h2 id="modal-interdit-title">L'Interdit Eau de Parfum Rouge</h2>
+        <p>Fleur blanche et touche de feu.</p>
+        <p class="price">Prix : 66,00 €</p>
+        <button class="buy" aria-label="Commander L'Interdit Eau de Parfum Rouge">Commander</button>
+        <button class="close" onclick="closeModal('interdit')" aria-label="Fermer la fenêtre modale">Fermer</button>
+      </div>
+    </div>
+
+    <div id="modal-interdit-rose" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-interdit-rose-title">
+      <div class="modal-content">
+        <img src="images/l'interdit1.jpg" alt="Flacon de parfum L'Interdit Eau de Parfum" loading="lazy">
+        <h2 id="modal-interdit-rose-title">L'Interdit Eau de Parfum</h2>
+        <p>Un floral contrasté audacieux.</p>
+        <p class="price">Prix : 66,00 €</p>
+        <button class="buy" aria-label="Commander L'Interdit Eau de Parfum">Commander</button>
+        <button class="close" onclick="closeModal('interdit-rose')" aria-label="Fermer la fenêtre modale">Fermer</button>
+      </div>
+    </div>
+
+    <div id="modal-scandal" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-scandal-title">
+      <div class="modal-content">
+        <img src="images/scandal.jpg" alt="Flacon de parfum SO SCANDAL! Le Parfum" loading="lazy">
+        <h2 id="modal-scandal-title">SO SCANDAL! Le Parfum</h2>
+        <p>Explosion florale pleine d’audace.</p>
+        <p class="price">Prix : 70,00 €</p>
+        <button class="buy" aria-label="Commander SO SCANDAL! Le Parfum">Commander</button>
+        <button class="close" onclick="closeModal('scandal')" aria-label="Fermer la fenêtre modale">Fermer</button>
+      </div>
+    </div>
+
+    <div id="modal-allure" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-allure-title">
+      <div class="modal-content">
+        <img src="images/dior-homme.jpg" alt="Flacon de parfum Chanel Allure Homme Sport" loading="lazy">
+        <h2 id="modal-allure-title">Allure Homme Sport</h2>
+        <p>Vitalité et fraîcheur masculine.</p>
+        <p class="price">Prix : 75,00 €</p>
+        <button class="buy" aria-label="Commander Chanel Allure Homme Sport">Commander</button>
+        <button class="close" onclick="closeModal('allure')" aria-label="Fermer la fenêtre modale">Fermer</button>
+      </div>
+    </div>
+
+    <div id="modal-pistachio" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-pistachio-title">
+      <div class="modal-content">
+        <img src="images/yum.jpg" alt="Flacon de parfum Yum Pistachio Gelato 33" loading="lazy">
+        <h2 id="modal-pistachio-title">Yum Pistachio Gelato | 33</h2>
+        <p>Glace pistache gourmande et givrée.</p>
+        <p class="price">Prix : 63,00 €</p>
+        <button class="buy" aria-label="Commander Yum Pistachio Gelato 33">Commander</button>
+        <button class="close" onclick="closeModal('pistachio')" aria-label="Fermer la fenêtre modale">Fermer</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Mysti B. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+      function openModal(id) {
+        const modal = document.getElementById(`modal-${id}`);
+        modal.style.display = "flex";
+        modal.focus();
+      }
+
+      function closeModal(id) {
+        document.getElementById(`modal-${id}`).style.display = "none";
+      }
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          document.querySelectorAll(".modal").forEach((modal) => {
+            modal.style.display = "none";
+          });
+        }
+      });
+
+      document.querySelector("form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const message = document.getElementById("message").value;
+        if (!name || !phone || !message) {
+          alert("Veuillez remplir tous les champs obligatoires.");
+          return;
+        }
+        if (!/\+[0-9]{10,15}/.test(phone)) {
+          alert("Veuillez entrer un numéro de téléphone valide au format international (ex. +33612345678).");
+          return;
+        }
+        // Rediriger vers WhatsApp avec un message pré-rempli
+        const ownerPhone = "+22178828"; // Remplacez par votre numéro WhatsApp au format international
+        const whatsappMessage = encodeURIComponent(`Nouveau message de ${name} (${phone}): ${message}`);
+        const whatsappUrl = `https://wa.me/${ownerPhone}?text=${whatsappMessage}`;
+        window.location.href = whatsappUrl;
+      });
+    </script>
+  </body>
+</html>
