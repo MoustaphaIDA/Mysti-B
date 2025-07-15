@@ -294,12 +294,8 @@
           alert("Veuillez remplir tous les champs obligatoires.");
           return;
         }
-        if (!/\+[0-9]{10,15}/.test(phone)) {
-          alert("Veuillez entrer un numéro de téléphone valide au format international (ex. +33612345678).");
-          return;
-        }
         // Rediriger vers WhatsApp avec un message pré-rempli
-        const ownerPhone = "+22178828"; // Remplacez par votre numéro WhatsApp au format international
+        const ownerPhone = "+1234567890"; // Remplacez par votre numéro WhatsApp au format international
         const whatsappMessage = encodeURIComponent(`Nouveau message de ${name} (${phone}): ${message}`);
         const whatsappUrl = `https://wa.me/${ownerPhone}?text=${whatsappMessage}`;
         window.location.href = whatsappUrl;
